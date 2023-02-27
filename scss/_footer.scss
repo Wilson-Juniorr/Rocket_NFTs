@@ -1,0 +1,27 @@
+footer{
+    background: #0E0E0E;
+    padding: 6.5rem 0rem;
+    .container-footer{
+        max-width: 126.8rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            gap: 5.0rem;
+            li{
+            transition: 2s;
+                &:hover{
+                    transform: rotate(360deg)
+                }
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 2.0rem;
+            line-height: 2.4rem;
+            color: #5A5757;
+        }
+    }
+}

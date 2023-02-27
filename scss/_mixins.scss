@@ -1,0 +1,21 @@
+@mixin title-arte($gap, $font-size, $line-height, $margin-bottom){
+    display: flex;
+    background-color: red;
+    color: var(--text-color);
+    gap: $gap;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin artista($padding-left, $padding-right, $bg){ 
+    display: flex;
+    justify-content: space-between;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    align-items: center;
+    max-width: 350px;
+    height: 150px;
+    background: $bg;
+}
+
