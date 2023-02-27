@@ -122,6 +122,7 @@ body {
 
 span {
   color: var(--color-logo);
+  font-weight: 700;
 }
 
 .section-two {
@@ -310,28 +311,36 @@ span {
 .section-footer {
   background: #0E0E0E;
 }
-.section-footer .container-footer {
-  color: var(--text-color);
-  max-width: 126.8rem;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-}
-.section-footer .container-footer .top-footer {
+.section-footer .top-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  color: var(--text-color);
+  max-width: 126.8rem;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.9rem;
   color: #FFFFFF;
   padding: 7rem 0rem;
 }
-.section-footer .container-footer .top-footer img {
+.section-footer .top-footer img {
   cursor: pointer;
+  transition: 2s;
 }
-.section-footer .container-footer .contatos-info .contato p {
+.section-footer .top-footer img:hover {
+  transform: rotate(360deg);
+}
+.section-footer .mid {
+  border-top: 1px solid #5A5757;
+  border-bottom: 1px solid #5A5757;
+}
+.section-footer .mid .container-mid {
+  max-width: 126.8rem;
+  margin: 0 auto;
+  display: flex;
+}
+.section-footer .mid .container-mid p {
   max-width: 35rem;
   font-size: 3rem;
   line-height: 3.7rem;
@@ -339,13 +348,13 @@ span {
   margin-bottom: 2.5rem;
   font-weight: 500;
 }
-.section-footer .container-footer .contatos-info .contato form {
+.section-footer .mid .container-mid form {
   width: 402px;
   height: 66px;
   display: flex;
   align-items: center;
 }
-.section-footer .container-footer .contatos-info .contato form input {
+.section-footer .mid .container-mid form input {
   height: 100%;
   background: #0D0D0D;
   font-weight: 400;
@@ -353,14 +362,77 @@ span {
   line-height: 2.4rem;
   color: #5A5757;
   border-radius: 5px;
+  text-align: center;
 }
-.section-footer .container-footer .contatos-info .contato form button {
+.section-footer .mid .container-mid form button {
   height: 100%;
   padding: 2.2rem 2.5rem;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  transition-property: background-color, border-radius;
+  transition-duration: 1s;
 }
-.section-footer .container-footer .lado-left {
-  max-width: 100%;
-  border: 1px solid red;
+.section-footer .mid .container-mid form button:hover {
+  background-color: rgb(170, 168, 168);
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.section-footer .left {
+  border-right: 1px solid #5A5757;
+  max-width: 40.2rem;
+  padding-top: 6.7rem;
+  padding-bottom: 8.2rem;
+}
+.section-footer .right {
+  display: flex;
+  justify-content: center;
+  color: #5A5757;
+  max-width: 58.3rem;
+  padding-top: 7.4rem;
+  padding-left: 12.2rem;
+  gap: 12.8rem;
+}
+.section-footer .right ul {
+  display: flex;
+  flex-direction: column;
+}
+.section-footer .right ul li {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  line-height: 3.5rem;
+}
+.section-footer .right ul strong {
+  color: white;
+  display: block;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+footer {
+  background: #0E0E0E;
+  padding: 6.5rem 0rem;
+}
+footer .container-footer {
+  max-width: 126.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container-footer ul {
+  display: flex;
+  gap: 5rem;
+}
+footer .container-footer ul li {
+  transition: 2s;
+}
+footer .container-footer ul li:hover {
+  transform: rotate(360deg);
+}
+footer .container-footer p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #5A5757;
 }/*# sourceMappingURL=main.css.map */
